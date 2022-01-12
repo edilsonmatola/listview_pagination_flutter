@@ -1,6 +1,7 @@
 # listview_pagination
 
-A new Flutter project.
+ListView with pagination in Flutter.
+Credits to: [kindacode.com](https://www.kindacode.com/article/flutter-listview-pagination-load-more/).
 
 ## Getting Started
 
