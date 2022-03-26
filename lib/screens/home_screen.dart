@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Fetching the first 20 posts
   int _page = 0;
-  int _limit = 20;
+  final int _limit = 20;
 
   // The controller for the ListView
   late ScrollController _controller;
@@ -107,31 +107,31 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Posts',
         ),
       ),
       body: _isFirstLoadRunning
-          ? Center(
+          ? const Center(
               child: CircularProgressIndicator(),
             )
           : Column(
               children: [
                 Expanded(
                   child: ListView.builder(
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     controller: _controller,
                     itemCount: _posts.length,
                     itemBuilder: (_, index) => Card(
                       color: Colors.grey.shade100,
-                      margin: EdgeInsets.symmetric(
+                      margin: const EdgeInsets.symmetric(
                         vertical: 8,
                         horizontal: 10,
                       ),
                       child: ListTile(
                         title: Text(
                           _posts[index]['title'],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
@@ -143,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 // * When the  _loadMore function is running
                 if (_isLoadMoreRunning)
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(
                       top: 10,
                       bottom: 40,
@@ -160,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: MediaQuery.of(context).size.height * .05,
                     child: Container(
                       color: Colors.black87,
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'You have fetched all the content.',
                           style: TextStyle(
