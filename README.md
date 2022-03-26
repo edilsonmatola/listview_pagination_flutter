@@ -1,17 +1,30 @@
 # listview_pagination
 
-ListView with pagination in Flutter.
-Credits to: [kindacode.com](https://www.kindacode.com/article/flutter-listview-pagination-load-more/).
+Fetching the data from [jsonplaceholder](https://jsonplaceholder.typicode.com/posts) and rendering in the UI.
 
-## Getting Started
+### Demo
 
-This project is a starting point for a Flutter application.
+<img src="./media/demo-1.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./media/demo-2.png" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./media/demo-preview.gif" width="30%">
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+##### 1. Clone the repository
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/edilsonmatola/listview_pagination_flutter.git
+```
+
+##### 2. Move to the desired folder
+
+```bash
+cd listview_pagination_flutter
+```
+
+##### 3. To run the app, simply write the following commands:
+
+```bash
+flutter pub get
+# flutter emulators --launch "emulator_id" (to get Android Simulator)
+open -a simulator (to get iOS Simulator)
+flutter run
+```
